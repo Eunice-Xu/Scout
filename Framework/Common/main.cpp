@@ -1,12 +1,15 @@
 #include <iostream>
 
 #include "../Interface/IApplication.hpp"
+#include "../Common/BaseApplication.h"
 
 using namespace My;
 
 namespace My
 {
-	extern IApplication* g_pApp;
+	//extern IApplication* g_pApp;
+	BaseApplication g_App;
+	IApplication* g_pApp = &g_App;
 }
 
 
